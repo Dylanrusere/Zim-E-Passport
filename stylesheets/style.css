@@ -5,11 +5,18 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style: none;
+    color: #182325;
+}
+
+/* Nav Bar */
+
+header{
+    height: 10vh;
 }
 
 .main_nav{
     display: grid;
-    grid-template-columns: 0.3fr 0.8fr 0.3fr;
+    grid-template-columns: 0.5fr 0.8fr 0.3fr;
     padding: 0.5% 2%;
     gap: 0%;
     align-items: center;
@@ -23,10 +30,12 @@
     display: flex;
     justify-content: flex-end;
     gap: 4%;
+    margin-right: 2%;
 }
 
 .main_nav ul a{
-    color: black;
+    color: #182325;
+    font-weight: 500;
     transition: 0.7s ease-in-out;
 }
 
@@ -39,6 +48,515 @@
     align-items: center;
 
     h3{
-        color: black;
+        color: #182325;
+        font-weight: 500;
+    }
+}
+
+.buttons{
+    margin-left: 2%;
+    text-align: center;
+
+    .buttons_btn{
+        cursor: pointer;
+        padding: 3% 5%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.btn_one{
+    background-color: #eba85c;
+    color: #182325;
+}
+
+.btn_one:hover{
+    background-color: #182325;
+    color: #ffffff;
+}
+
+.btn_two{
+    background-color: #182325;
+    color: #ffffff;
+
+    @media(max-width:1142px){
+        margin-top: 3%;
+    }
+
+    i{
+        color: white;
+        transition: 0.5s;
+    }
+}
+
+.btn_two{
+
+    
+}
+
+.btn_two:hover{
+    background-color: #eba85c;
+    color: #182325;
+}
+
+/* Hero Section */
+#hero_section{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5%;
+}
+
+.hero_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3% 2% 0 2%;
+    gap: 2%;
+
+    @media(max-width:590px){
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+
+    @media(max-width:590px){
+        align-items: center;
+        justify-content: start;
+        height: 100%;
+    }
+
+    .big_par{
+        font-weight: 500;
+        font-size: 40px;
+
+        @media(max-width:890px){
+            font-size: 35px;
+        }
+
+        @media(max-width:760px){
+            font-size: 30px;
+        }
+    }
+
+    p{
+        margin-top: 5%;
+    }
+}
+
+.hero_button{
+    width: 200px;
+    cursor: pointer;
+    padding: 2% 2%;
+    border-radius: 500px;
+    transition: 0.5s ease-in-out;
+    margin-top: 5%;
+    background-color: #182325;
+    color: #ffffff;
+
+    @media(max-width:900px){
+        width: 150px;
+        padding: 3% 3%;
+    }
+}
+
+.hero_button:hover{
+    background-color: #eba85c;
+    color: #182325;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img{
+        width: 100%;
+        border-radius: 20px;
+
+    }
+}
+
+/* Advantages of the E-Passport */
+.adv_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 2% 0 2%;
+    gap: 2%;
+
+    @media(max-width:700px){
+        grid-template-columns: 1fr;
+    }
+
+    @media(max-width:590px){
+        margin-top: 40%;
+    }
+}
+
+.big_adv{
+    width: 100%;
+    height: 50vh;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+
+    @media(max-width:405px){
+        height: 60vh;
+    }
+}
+
+
+.big_par_adv{
+    font-weight: 500;
+    font-size: 40px;
+    margin: 5%;
+
+    @media(max-width:890px){
+        font-size: 35px;
+    }
+
+    @media(max-width:760px){
+        font-size: 30px;
+    }
+}
+
+.numbers{
+    display: flex;
+    gap: 10%;
+}
+
+.million{
+    margin: 5%;
+}
+
+.percentage{
+    margin: 5%;
+}
+
+.numbers_numbers{
+    font-size: 40px;
+    color: #1F8498;
+    font-weight: 500;
+}
+
+.two_adv{
+    display: grid;
+    gap: 5%;
+}
+
+.accessable{
+    width: 100%;
+    height: 23vh;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+    p{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+}
+
+.easy_use{
+    width: 100%;
+    height: 23vh;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+    p{
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+}
+
+/* How the E-Passport works */
+.head{
+    padding: 8% 2% 0 2%;
+
+    p{
+        font-size: 30px;
+        font-weight: 500;
+
+        @media(max-width:570px){
+            font-size: 20px;
+        }
+
+        @media(max-width:360px){
+            font-size: 15px;
+        }
+    }
+}
+
+.card_container_works{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3% 2% 0 2%;
+    gap: 1.5%;
+
+    @media(max-width:830px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.card{
+    background-color: #EEF9FB;
+    border-radius: 20px;
+}
+
+.card_content{
+    margin: 5%;
+}
+
+.icon_container{
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.card_number{
+    position: absolute;
+    color: #ffffff;
+    background-color: #182325;
+    padding: 5px 15px 5px 15px;
+    margin-left: -4%;
+    margin-top: -5%;
+    border-radius: 1000px;
+
+    @media(max-width:830px){
+        margin-left: -7%;
+        margin-top: -10%;
+    }
+}
+
+.card_head{
+    font-weight: 500;
+    margin-top: 4%;
+    font-size: 20px;
+}
+
+.card_details{
+    margin-top: 4%;
+}
+
+/* How to take good photos */
+.good_photos_{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.next_prev{
+
+    i{
+        font-size: 40px;
+
+        @media(max-width:390px){
+            font-size: 30px;
+        }
+    }
+}
+
+.card_container_photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+    padding: 3% 2% 0 2%;
+
+    @media(max-width:530px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.card_photos{
+    background-color: #1F8498;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+.card_photos_content{
+    margin: 8% 8% 25% 8%;
+
+    @media(max-width:750px){
+        margin-bottom: 10%;
+    }
+}
+
+.photos_image_container{
+    margin: 0 15% 2% 15%;
+
+    @media(max-width:600px){
+        margin: 0 10%;
+    }
+}
+
+.photos_image{
+    width: 100%;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.photos_details_container{
+    margin-top: 15%;
+
+    @media(max-width:750px){
+        margin-top: 10%;
+    }
+
+    @media(max-width:530px){
+        margin-top: 6%;
+    }
+
+    p{
+        color: #ffffff;
+    }
+}
+
+.photos_head{
+    font-weight: 500;
+
+    @media(max-width:530px){
+        font-size: 20px;
+    }
+}
+
+.photos_details{
+    font-size: 14px;
+    margin: 5% 0 5% 0;
+
+    @media(max-width:750px){
+        font-size: 10px;
+    }
+
+    @media(max-width:530px){
+        font-size: 14px;
+    }
+}
+
+/* Passport Reference */
+.head_ref{
+    padding: 8% 2% 0 2%;
+
+    @media(max-width:530px){
+        margin-top: 10%;
+    }
+
+    p{
+        font-size: 30px;
+        font-weight: 500;
+
+        @media(max-width:630px){
+            font-size: 20px;
+        }
+
+        @media(max-width:430px){
+            font-size: 15px;
+        }
+    }
+}
+
+.ref_button{
+    width: 150px;
+    cursor: pointer;
+    padding: 10%;
+    border-radius: 500px;
+    transition: 0.5s ease-in-out;
+    background-color: #182325;
+    color: #ffffff;
+
+    @media(max-width:900px){
+        width: 100px;
+        padding: 3% 3%;
+    }
+}
+
+.ref_button:hover{
+    background-color: #eba85c;
+    color: #182325;
+}
+
+.ref_card_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+    padding: 3% 2% 0 2%;
+
+    @media(max-width:530px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.ref_card{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+.ref_card_content{
+    margin: 8% 8% 25% 8%;
+
+    @media(max-width:750px){
+        margin-bottom: 10%;
+    }
+}
+
+.ref_image{
+    width: 100%;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.ref_details_container{
+    margin-top: 15%;
+
+    @media(max-width:750px){
+        margin-top: 10%;
+    }
+
+    @media(max-width:530px){
+        margin-top: 6%;
+    }
+
+    p{
+        color: #182325;
+    }
+}
+
+.ref_head{
+    font-weight: 500;
+
+    @media(max-width:530px){
+        font-size: 20px;
+    }
+}
+
+.ref_details{
+    font-size: 14px;
+    margin: 5% 0 5% 0;
+
+    @media(max-width:750px){
+        font-size: 10px;
+    }
+
+    @media(max-width:530px){
+        font-size: 14px;
     }
 }
