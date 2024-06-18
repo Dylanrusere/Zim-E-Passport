@@ -281,6 +281,14 @@ header{
 .head{
     padding: 8% 2% 0 2%;
 
+    @media(max-width:550px){
+        margin-top: 10%;
+    }
+
+    @media(max-width:300px){
+        margin-top: 15%;
+    }
+
     p{
         font-size: 30px;
         font-weight: 500;
@@ -289,9 +297,9 @@ header{
             font-size: 20px;
         }
 
-        @media(max-width:360px){
+        /* @media(max-width:360px){
             font-size: 15px;
-        }
+        } */
     }
 }
 
@@ -464,9 +472,9 @@ header{
             font-size: 20px;
         }
 
-        @media(max-width:430px){
+        /* @media(max-width:430px){
             font-size: 15px;
-        }
+        } */
     }
 }
 
