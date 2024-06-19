@@ -364,6 +364,10 @@ header{
     @media(max-width:800px){
         width: 200%;
     }
+
+    @media(max-width:530px){
+        width: 100%;
+    }
 }
 
 /* How to take good photos */
@@ -1021,4 +1025,135 @@ header{
             display: none;
         }
     }
+}
+
+/* Footer */
+footer{
+    margin-top: 5%;
+    padding-bottom: 3%;
+    background-color: #182325;
+}
+
+.footer_container{
+    margin: 0 2% 0 2%;
+    padding-top: 3%;
+}
+
+.container_footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    @media(max-width:920px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:530px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer_logo{
+    display: flex;
+    align-items: center;
+
+    h3{
+        color: #ffffff;
+        font-weight: 500;
+    }
+}
+
+.navigation_links{
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width:920px){
+        justify-content: flex-end;
+    }
+
+    @media(max-width:530px){
+        margin-top: 3%;
+    }
+
+    a{
+        color: #ffffff;
+    }
+}
+
+.faded{
+    color: #838383;
+}
+
+.social{
+
+    @media(max-width:530px){
+        margin-top: 3%;
+    }
+}
+
+.social_platforms{
+
+    @media(max-width:530px){
+        margin-top: 3%;
+    }
+
+    i{
+        color: #ffffff;
+        font-size: 20px;
+        background-color: #3d4141;
+        border-radius: 200px;
+        padding: 5%;
+    }
+}
+
+.get_in_touch{
+    margin-top: 10%;
+}
+
+.get{
+    color: #ffffff;
+}
+
+.QR_code{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media(max-width:530px){
+        align-items: flex-start;
+    }
+}
+
+.QR_code_pic{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media(max-width:530px){
+        justify-content: flex-start;
+    }
+
+    img{
+        width: 100px;
+    }
+}
+
+.cookies{
+    display: flex;
+    justify-content: space-between;
+    gap: 60%;
+
+    p{
+        color: #ffffff;
+    }
+}
+
+.policy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.small{
+    font-size: 13px;
 }
