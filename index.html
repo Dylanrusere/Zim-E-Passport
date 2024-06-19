@@ -15,19 +15,44 @@
         <section id="hero_section">
             <!-- Navigation Bar -->
             <header>
+                <a href="./index.html">
+                    <div class="logo"><img src="./assets/images/logo.png" alt="Logo" width="60px"><h3>Zim E-Passport</h3></div>
+                </a>
                 <nav class="main_nav">
-                    <a href="./index.html">
-                        <div class="logo"><img src="./assets/images/logo.png" alt="Logo" width="60px"><h3>Zim E-Passport</h3></div>
-                    </a>
+                    <div></div>
                     <ul>
-                        <li><a href="#">Popular Documents</a></li>
+                        <li><a href="./popular_docs.html">Popular Documents</a></li>
                         <li><a href="#">Reference</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe globe_big"></i></a></li>
                     </ul>
                     <div class="buttons">
                         <button class="buttons_btn btn_one">Upload Photo</button>
                         <button class="buttons_btn btn_two"> <i class="fa-brands fa-apple"></i> Download</button>
+                    </div>
+                </nav>
+                <!-- Ham Menu -->
+                <div class="offScreenMenu">
+                    
+                    <ul>
+                        <li><a href="./popular_docs.html">Popular Documents</a></li>
+                        &nbsp;
+                        <li><a href="#">References</a></li>
+                        &nbsp;
+                        <li><a href="#">Blog</a></li>
+                        &nbsp;
+                        <li><a href="#"><i class="fa-solid fa-globe globe"></i></a></li>
+                    </ul>
+                    <div class="buttons">
+                        <button class="buttons_btn btn_one one_ham">Upload Photo</button>
+                        <button class="buttons_btn btn_two two_ham"> <i class="fa-brands fa-apple"></i> Download</button>
+                    </div>
+                </div>
+                <nav class="ham_icon">
+                    <div class="ham_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </nav>
             </header>
@@ -47,79 +72,81 @@
 
         <!-- Advantages of the E-Passport Website -->
         <section id="advantages">
-        <div class="adv_container">
-            <div class="big_adv">
-                <p class="big_par_adv">We have a large number of advantages</p>
-                <div class="numbers">
-                    <div class="million">
-                        <p class="numbers_numbers">1M+</p>
-                        <p class="second">approved ID photos</p>
+            <div class="adv_container">
+                <div class="big_adv">
+                    <p class="big_par_adv">We have a large number of advantages</p>
+                    <div class="numbers">
+                        <div class="million">
+                            <div id="counter_thousand">0</div>
+                            <p class="second">approved ID photos</p>
+                        </div>
+                        <div class="percentage">
+                            <div class="perc_container">
+                                <div class="numbers_two" id="counter_percentage">0</div><p class="numbers_two">%</p>
+                            </div>
+                            <p class="second">Guarantee of acceptance</p>
+                        </div>
                     </div>
-                    <div class="percentage">
-                        <p class="numbers_numbers">200%</p>
-                        <p class="second">Guarantee of acceptance</p>
+                </div>
+                <div class="two_adv">
+                    <div class="accessable">
+                        <p> <img src="./assets/images/11.png" alt="" width="70px"> Fast access to documents anywhere in the 
+                            world</p>
+                    </div>
+                    <div class="easy_use">
+                        <p> <img src="./assets/images/11.png" alt="" width="70px"> Fast access to documents anywhere in the 
+                            world</p>
                     </div>
                 </div>
             </div>
-            <div class="two_adv">
-                <div class="accessable">
-                    <p> <img src="./assets/images/11.png" alt="" width="70px"> Fast access to documents anywhere in the 
-                        world</p>
-                </div>
-                <div class="easy_use">
-                    <p> <img src="./assets/images/11.png" alt="" width="70px"> Fast access to documents anywhere in the 
-                        world</p>
-                </div>
-            </div>
-        </div>
         </section>
 
         <!-- How the E-Passport works -->
         <section id="how_it_works">
-        <div class="head">
-            <p>How it works</p>
-        </div>
+            <div class="head">
+                <p>How it works</p>
+            </div>
 
-        <div class="card_container_works">
-            <div class="card">
-                <div class="card_content">
-                    <div class="icon_container">
-                        <p class="card_number">1</p>
-                        <img src="./assets/images/10.png" alt="" width="90px">
+            <div class="card_container_works">
+                <div class="card">
+                    <div class="card_content">
+                        <div class="icon_container">
+                            <p class="card_number">1</p>
+                            <img src="./assets/images/10.png" alt="" width="90px">
+                        </div>
+                        <p class="card_head">Click & Upload</p>
+                        <p class="card_details">Effortlessly capture a crystal-clear passport
+                            photo using your smartphone or digital camera, and instantly upload
+                            it to our user-friendly website.</p>
                     </div>
-                    <p class="card_head">Click & Upload</p>
-                    <p class="card_details">Effortlessly capture a crystal-clear passport
-                        photo using your smartphone or digital camera, and instantly upload
-                        it to our user-friendly website.</p>
+                </div><div class="card">
+                    <div class="card_content">
+                        <div class="icon_container">
+                            <p class="card_number">2</p>
+                            <img src="./assets/images/10.png" alt="" width="90px">
+                        </div>
+                        <p class="card_head">AI-Enhanced Editing</p>
+                        <p class="card_details">Experience the power of cutting-edge AI 
+                            technology as it seamlessly removes 
+                            backgrounds and refines your image to fulfill 
+                            all passport specifications.</p>
+                    </div>
                 </div>
-            </div><div class="card">
-                <div class="card_content">
-                    <div class="icon_container">
-                        <p class="card_number">2</p>
-                        <img src="./assets/images/10.png" alt="" width="90px">
+                <div class="card card_span">
+                    <div class="card_content">
+                        <div class="icon_container">
+                            <p class="card_number">3</p>
+                            <img src="./assets/images/13.png" alt="" width="90px">
+                        </div>
+                        <p class="card_head">Guaranteed Quality Check</p>
+                        <p class="card_details">Our dedicated team of seasoned 
+                            professionals rigorously scrutinizes every 
+                            photo, making certain it surpasses all quality 
+                            standards and complies with official 
+                            regulations.</p>
                     </div>
-                    <p class="card_head">AI-Enhanced Editing</p>
-                    <p class="card_details">Experience the power of cutting-edge AI 
-                        technology as it seamlessly removes 
-                        backgrounds and refines your image to fulfill 
-                        all passport specifications.</p>
                 </div>
             </div>
-            <div class="card card_span">
-                <div class="card_content">
-                    <div class="icon_container">
-                        <p class="card_number">3</p>
-                        <img src="./assets/images/13.png" alt="" width="90px">
-                    </div>
-                    <p class="card_head">Guaranteed Quality Check</p>
-                    <p class="card_details">Our dedicated team of seasoned 
-                        professionals rigorously scrutinizes every 
-                        photo, making certain it surpasses all quality 
-                        standards and complies with official 
-                        regulations.</p>
-                </div>
-            </div>
-        </div>
         </section>
 
         <!-- How to take good photos -->
@@ -425,18 +452,18 @@
                     <div class="navigation_links">
                         <a href="#">Home Page</a>
                         &nbsp;
-                        <a href="#">Popular Documents</a>
+                        <a href="./popular_docs.html">Popular Documents</a>
                         &nbsp;
                         <a href="#">Passport for reference</a>
                     </div>
                     <div class="social">
                         <p class="faded">Social</p>
                         <div class="social_platforms">
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-facebook-f fb"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f fb"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                         <div class="get_in_touch">
                             <p class="faded">Get In Touch</p>
@@ -467,5 +494,7 @@
             </div>
         </footer>
     
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>
