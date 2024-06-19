@@ -306,7 +306,11 @@ header{
     padding: 3% 2% 0 2%;
     gap: 1.5%;
 
-    @media(max-width:830px){
+    @media(max-width:800px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width:530px){
         grid-template-columns: 1fr;
     }
 }
@@ -354,6 +358,12 @@ header{
 
 .card_details{
     margin-top: 4%;
+}
+
+.card_span{
+    @media(max-width:800px){
+        width: 200%;
+    }
 }
 
 /* How to take good photos */
@@ -474,6 +484,10 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5%;
     padding: 3% 2% 0 2%;
+
+    @media(max-width:800px){
+        grid-template-columns: 1fr 1fr;
+    }
 
     @media(max-width:530px){
         grid-template-columns: 1fr;
@@ -600,6 +614,10 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5%;
     padding: 3% 2% 0 2%;
+
+    @media(max-width:800px){
+        grid-template-columns: 1fr 1fr;
+    }
 
     @media(max-width:530px){
         grid-template-columns: 1fr;
@@ -863,8 +881,12 @@ header{
     gap: 1.5%;
     padding: 3% 2% 0 2%;
 
-    @media(max-width:750px){
+    @media(max-width:800px){
         grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width:530px){
+        grid-template-columns: 1fr;
     }
 }
 
@@ -917,6 +939,14 @@ header{
     margin-top: 15%;
 }
 
+.fourth{
+    display: none;
+
+    @media(max-width:800px){
+        display: block;
+    }
+}
+
 /* Download of the Mobile App */
 #mobile_app{
     margin-top: 5%;
@@ -929,10 +959,18 @@ header{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     gap: 2%;
+
+    @media(max-width:800px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .mobile_app_details{
     margin: 20% 0 30% 15%;
+
+    @media(max-width:800px){
+        margin: 5%;
+    }
 }
 
 .head_download{
@@ -973,8 +1011,14 @@ header{
 
 .mobile_app_image{
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 
     img{
         width: 100%;
+
+        @media(max-width:800px){
+            display: none;
+        }
     }
 }
