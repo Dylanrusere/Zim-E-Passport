@@ -954,6 +954,10 @@ header{
 /* Download of the Mobile App */
 #mobile_app{
     margin-top: 5%;
+
+    @media(max-width:530px){
+        margin-top: 20%;
+    }
 }
 
 .mobile_app_container{
