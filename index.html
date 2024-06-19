@@ -11,8 +11,8 @@
 </head>
 <body>
 
-    <!-- Hero Section -->
-     <section id="hero_section">
+        <!-- Hero Section -->
+        <section id="hero_section">
         <!-- Navigation Bar -->
         <header>
             <nav class="main_nav">
@@ -43,9 +43,10 @@
                 <img src="./assets/images/hero.png" alt="Our Mobile App">
             </div>
          </div>
-     </section>
-     <!-- Advantages of the E-Passport Website -->
-     <section id="advantages">
+        </section>
+
+        <!-- Advantages of the E-Passport Website -->
+        <section id="advantages">
         <div class="adv_container">
             <div class="big_adv">
                 <p class="big_par_adv">We have a large number of advantages</p>
@@ -71,10 +72,10 @@
                 </div>
             </div>
         </div>
-     </section>
+        </section>
 
-     <!-- How the E-Passport works -->
-      <section id="how_it_works">
+        <!-- How the E-Passport works -->
+        <section id="how_it_works">
         <div class="head">
             <p>How it works</p>
         </div>
@@ -119,15 +120,15 @@
                 </div>
             </div>
         </div>
-      </section>
+        </section>
 
-      <!-- How to take good photos -->
-       <section id="good_photos">
+        <!-- How to take good photos -->
+        <section id="good_photos">
             <div class="head good_photos_">
                 <p>How to take good photos</p>
                 <div class="next_prev">
-                    <i class="fa-solid fa-circle-arrow-left arrows"></i>
-                    <i class="fa-solid fa-circle-arrow-right arrows"></i>
+                    <div class="arrows_container"><i class="fa-solid fa-arrow-left arrows"></i></div>
+                    <div class="arrows_container"><i class="fa-solid fa-arrow-right arrows right_arrow"></i></div>
                 </div>
             </div>
 
@@ -181,13 +182,13 @@
                 </div>
              </div>
 
-       </section>
+        </section>
 
        <!-- Passport references -->
         <section id="passport_references">
             <div class="head_ref good_photos_">
                 <p>Get a passport for reference</p>
-                <div class="next_prev">
+                <div class="ref_button_container">
                     <button class="ref_button">Read More</button>
                 </div>
             </div>
@@ -246,12 +247,12 @@
         </section>
 
         <!-- Popular Docs -->
-         <section id="popular_docs">
+        <section id="popular_docs">
             <div class="head_docs good_photos_ docs">
                 <p>Popular Documents</p>
                 <div class="search_bar">
                     <input type="text" id="search_input" placeholder="Search for a document">
-                    <i class="fa-solid fa-circle-arrow-right" id="search_icon"></i>
+                    <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
                 </div>
             </div>
 
@@ -301,35 +302,98 @@
                     </a>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <!-- Reviews -->
-          <section id="reviews">
+        <!-- Reviews -->
+        <section id="reviews">                                                                                                                                        
             <div class="head good_photos_">
-                <p>User Reviews <span class="reviews_rating">4.8</span></p>
+                <p>User Reviews <span class="reviews_rating"><i class="fa-solid fa-star"></i> 4.8</span></p>
                 <div class="next_prev">
-                    <i class="fa-solid fa-circle-arrow-left arrows"></i>
-                    <i class="fa-solid fa-circle-arrow-right arrows"></i>
+                    <div class="arrows_container"><i class="fa-solid fa-arrow-left arrows"></i></div>
+                    <div class="arrows_container"><i class="fa-solid fa-arrow-right arrows right_arrow"></i></div>
                 </div>
             </div>
 
             <div class="reviews_cards_container">
-                <div class="reviews_cards">
-                    <div class="review_card_head">
-                        <div class="prof_pic">
-                            <img src="./assets/images/8.png" alt="">
+                <div class="reviews_container">
+                    <div class="reviews_cards">
+                        <div class="review_card_head">
+                            <div class="prof_pic">
+                                <img src="./assets/images/8.png" alt="">
+                            </div>
+                            <div class="name">
+                                <p class="name_head">John Sakubva.</p>
+                                <p class="rating">5.0 <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span></p>
+                            </div>
                         </div>
-                        <div class="name">
-                            <p>John Sakubva.</p>
-                            <p>5.0</p>
+                        <div class="review_card_body">
+                            <p> Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco</p>
                         </div>
                     </div>
-                    <div class="review_card_body">
-
+                </div>
+                <div class="reviews_container">
+                    <div class="reviews_cards">
+                        <div class="review_card_head">
+                            <div class="prof_pic">
+                                <img src="./assets/images/8.png" alt="">
+                            </div>
+                            <div class="name">
+                                <p class="name_head">Tinashe Muti.</p>
+                                <p class="rating">5.0 <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span></p>
+                            </div>
+                        </div>
+                        <div class="review_card_body">
+                            <p> Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews_container">
+                    <div class="reviews_cards">
+                        <div class="review_card_head">
+                            <div class="prof_pic">
+                                <img src="./assets/images/8.png" alt="">
+                            </div>
+                            <div class="name">
+                                <p class="name_head">Kudakwashe Mbeva.</p>
+                                <p class="rating">5.0 <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></span></p>
+                            </div>
+                        </div>
+                        <div class="review_card_body">
+                            <p> Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco</p>
+                        </div>
                     </div>
                 </div>
             </div>
-          </section>
+        </section>
+
+        <!-- Download of the Mobile App -->
+        <section id="mobile_app">
+            <div class="mobile_app_container">
+                <div class="mobile_app_details">
+                    <p class="head_download">Download our app</p>
+                    <p class="deatils_download">Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore </p>
+
+                        <button class="button_download"> <i class="fa-brands fa-apple"></i> Download</button>
+                </div>
+                <div class="mobile_app_image">
+                    <img src="./assets/images/mobile_app.png" alt="Our Mobile App">
+                </div>
+            </div>
+        </section>
     
 </body>
 </html>

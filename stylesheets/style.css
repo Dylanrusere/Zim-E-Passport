@@ -363,22 +363,111 @@ header{
     justify-content: space-between;
 }
 
-.arrows{
-    font-size: 40px;
-    color: #f5f5f5;
+.next_prev{
+    display: flex;
+    gap: 50%;
+    margin-right: 5%;
+
+    @media(max-width:1190px){
+        margin-right: 6%;
+    }
+
+    @media(max-width:960px){
+        margin-right: 7%;
+    }
+
+    @media(max-width:860px){
+        margin-right: 8%;
+    }
+
+    @media(max-width:700px){
+        margin-right: 9%;
+    }
+
+    @media(max-width:650px){
+        margin-right: 10%;
+    }
+
+    @media(max-width:650px){
+        margin-right: 11%;
+    }
+
+    @media(max-width:500px){
+        margin-right: 12%;
+    }
+
+    @media(max-width:480px){
+        margin-right: 13%;
+    }
+
+    @media(max-width:450px){
+        margin-right: 14%;
+    }
+
+    @media(max-width:430px){
+        margin-right: 15%;
+    }
+
+    @media(max-width:410px){
+        margin-right: 16%;
+    }
+
+    @media(max-width:400px){
+        margin-right: 12%;
+    }
+
+    @media(max-width:360px){
+        margin-right: 13%;
+    }
+
+    @media(max-width:330px){
+        margin-right: 14%;
+    }
+
+    @media(max-width:320px){
+        margin-right: 15%;
+    }
+
+    @media(max-width:306px){
+        margin-right: 16%;
+    }
+
+    @media(max-width:298px){
+        margin-right: 17%;
+    }
+}
+
+.arrows_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30%;
+    background-color: #f5f5f5;
+    border-radius: 500px;
+    transition: 0.5s ease-in-out;
+}
+
+.arrows_container:hover{
     background-color: #182325;
+}
+
+.arrows_container:hover{
+    .arrows{
+        color: #f5f5f5;
+    }
+}
+
+.arrows{
+    font-size: 20px;
+    color: #182325;
     border-radius: 5000px;
     transition: 0.5s ease-in-out;
 
-        @media(max-width:390px){
-            font-size: 30px;
+        @media(max-width:400px){
+            font-size: 15px;
         }
 }
 
-.arrows:hover{
-    color: #1F8498;
-    background-color: #f5f5f5;
-}
 
 .card_container_photos{
     display: grid;
@@ -464,7 +553,7 @@ header{
     }
 }
 
-/* Passport docerence */
+/* Passport refference */
 .head_ref{
     padding: 8% 2% 0 2%;
 
@@ -496,7 +585,7 @@ header{
     color: #ffffff;
 
     @media(max-width:900px){
-        width: 100px;
+        width: 140px;
         padding: 3% 3%;
     }
 }
@@ -644,7 +733,7 @@ header{
 }
 
 #search_icon{
-    font-size: 25px;
+    font-size: 15px;
 
         @media(max-width:390px){
             font-size: 20px;
@@ -768,8 +857,29 @@ header{
 }
 
 /* Reviews */
+.reviews_cards_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+    padding: 3% 2% 0 2%;
+
+    @media(max-width:750px){
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.reviews_container{
+    background-color: #f5f5f5;
+    padding: 8% 6%;
+    border-radius: 20px;
+}
+
 .reviews_rating{
     color: #eba85c;
+
+    i{
+        color: #eba85c;
+    }
 }
 
 .review_card_head{
@@ -788,4 +898,83 @@ header{
 
 .name{
     margin: 0 0 0 1%;
+}
+
+.name_head{
+    font-weight: 500;
+}
+
+.rating{
+    color: #1F8498;
+    font-weight: 500;
+
+    i{
+        color: #1F8498;
+    }
+}
+
+.review_card_body{
+    margin-top: 15%;
+}
+
+/* Download of the Mobile App */
+#mobile_app{
+    margin-top: 5%;
+}
+
+.mobile_app_container{
+    margin: 0 2%;
+    background-color: #1F8498;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2%;
+}
+
+.mobile_app_details{
+    margin: 20% 0 30% 15%;
+}
+
+.head_download{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.deatils_download{
+    color: #ffffff;
+    margin-top: 5%;
+}
+
+.button_download{
+    margin-top: 5%;
+    background-color: #ffffff;
+    color: #1F8498;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 3% 5%;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+
+    i{
+        color: #1F8498;
+    }
+}
+
+.button_download:hover{
+    background-color: #182325;
+    color: #ffffff;
+}
+
+.button_download:hover{
+    i{
+        color: #ffffff;
+    }
+}
+
+.mobile_app_image{
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
 }
