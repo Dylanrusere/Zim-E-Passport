@@ -55,7 +55,182 @@
                 </div>
             </nav>
         </header>
+        <!-- Steps Bars -->
+        <div class="steps_container">
+            <div class="steps step_1">
+                <div class="active_line step_done"></div>
+                <div class="step_number">
+                    <p class="step_head">Step 1</p>
+                    <p class="step_detail"> Select Country and Size</p>
+                </div>
+            </div>
+            <div class="steps step_1">
+                <div class="line"></div>
+                <div class="step_number">
+                    <p class="step_head">Step 2</p>
+                    <p class="step_detail">Upload Photo</p>
+                </div>
+            </div>
+            <div class="steps step_1">
+                <div class="line"></div>
+                <div class="step_number">
+                    <p class="step_head">Step 3</p>
+                    <p class="step_detail">Adjust</p>
+                </div>
+            </div>
+            <div class="steps step_1">
+                <div class="line"></div>
+                <div class="step_number">
+                    <p class="step_head">Step 4</p>
+                    <p class="step_detail">Finish/Inch</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo & Country Selection -->
+        <div class="photo_country_container">
+            <div class="photo_container_">
+                <p class="step_detail_head">Select Country and Size</p>
+                <img src="./assets/images/15.png" alt="">
+            </div>
+            <div class="country_selection">
+                <div class="country_content_container">
+                    <div class="country_content">
+                        <p class="country_select_head">Select Size and Country</p>
+                        <form class="country_form" action="">
+                            <label for="country_selection_input">Country*</label>
+                            <input type="dropdown" list="countries" placeholder="Zimbabwe" name="country_selection_input" class="countries_input">
+                            <datalist id="countries">
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Germany">Germany</option>
+                            </datalist>
+                            <label for="doc_type" class="doc_type">Document*</label>
+                            <input type="text" name="doc_type" placeholder="Document Type and Size" class="input_doc_type">
+                            <button type="submit" class="next_step_button">Next Step</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
      </section>
+
+     <!-- How To Take Good Photos -->
+     <section id="good_photos">
+        <div class="head good_photos_ step_photos_head">
+            <p>How to take good photos</p>
+            <div class="next_prev">
+                <div class="arrows_container"><i class="fa-solid fa-arrow-left arrows"></i></div>
+                <div class="arrows_container"><i class="fa-solid fa-arrow-right arrows right_arrow"></i></div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+         <div class="card_container_photos step_photos_container">
+            <div class="card_photos">
+                <div class="card_photos_content">
+                    <div class="photos_image_container">
+                        <div class="photos_image">
+                            <img src="./assets/images/2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="photos_details_container">
+                        <p class="photos_head">Pose</p>
+                        <p class="photos_details">Stand in a well-lit area and pose for your 
+                            perfect passport photo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card_photos">
+                <div class="card_photos_content">
+                    <div class="photos_image_container">
+                        <div class="photos_image">
+                            <img src="./assets/images/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="photos_details_container">
+                        <p class="photos_head">Background</p>
+                        <p class="photos_details">Upload your photo and let our advanced 
+                            technology remove the background for you, 
+                            ensuring it meets passport standards</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card_photos card_span">
+                <div class="card_photos_content">
+                    <div class="photos_image_container">
+                        <div class="photos_image">
+                            <img src="./assets/images/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="photos_details_container">
+                        <p class="photos_head">Quality</p>
+                        <p class="photos_details">Our team of experts will review your photo 
+                            and make sure it meets all the necessary 
+                            criteria for your passport, so you can have 
+                            peace of mind knowing your photo will be 
+                            accepted.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_container">
+            <div class="container_footer">
+                <div class="logo_container">
+                    <div class="footer_logo"><img src="./assets/images/logo.png" alt="Logo" width="60px"><h3>Zim E-Passport</h3></div>
+                </div>
+                <div class="navigation_links">
+                    <a href="#">Home Page</a>
+                    &nbsp;
+                    <a href="./popular_docs.html">Popular Documents</a>
+                    &nbsp;
+                    <a href="#">Passport for reference</a>
+                </div>
+                <div class="social">
+                    <p class="faded">Social</p>
+                    <div class="social_platforms">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f fb"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="get_in_touch">
+                        <p class="faded">Get In Touch</p>
+                        <p class="get">+263 78 300 2822</p>
+                        <p class="get">Send a message</p>
+                    </div>
+                </div>
+                <div class="QR_code">
+                    <p class="faded">Get App</p>
+                    <div class="QR_code_pic">
+                        <img src="./assets/images/9.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy">
+                <div class="cookies">
+                    <p class="small">Cookies Policy</p>
+                    <p class="small">Privacy Policy</p>
+                </div>
+                <div class="copyright">
+                    <p class="faded small">&copy; Zim E-Passport</p>
+                </div>
+            </div>
+            <div class="dylan_dev">
+
+            </div>
+        </div>
+    </footer>
     
      <script src="./js/main.js"></script>
 </body>

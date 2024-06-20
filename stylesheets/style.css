@@ -124,7 +124,7 @@ header{
 }
 
 .globe{
-    color: #f5f5f5;
+    color: #dddbdb;
     font-size: 30px;
     transition: 0.5s ease-in-out;
 }
@@ -408,7 +408,7 @@ header{
 .big_adv{
     width: 100%;
     height: 50vh;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 20px;
 
     @media(max-width:405px){
@@ -468,7 +468,7 @@ header{
 .accessable{
     width: 100%;
     height: 23vh;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -483,7 +483,7 @@ header{
 .easy_use{
     width: 100%;
     height: 23vh;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -673,7 +673,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 30%;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 500px;
     transition: 0.5s ease-in-out;
 }
@@ -684,7 +684,7 @@ header{
 
 .arrows_container:hover{
     .arrows{
-        color: #f5f5f5;
+        color: #dddbdb;
     }
 }
 
@@ -846,7 +846,7 @@ header{
 }
 
 .ref_card{
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 20px;
     margin-top: 4%;
     transition: 0.5s ease-in-out;
@@ -858,7 +858,7 @@ header{
 
 .ref_card:hover{
     p{
-        color: #f5f5f5;
+        color: #dddbdb;
     }
 }
 
@@ -957,7 +957,7 @@ header{
     align-items: center;
     padding: 1% 2%;
     border-radius: 10px;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
 
     @media(max-width:350px){
         margin-top: 2%;
@@ -1056,7 +1056,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 20px;
     width: 100%;
     height: 100%;
@@ -1083,11 +1083,11 @@ header{
 
 .all_docs:hover{
     .all{
-        color: #f5f5f5;
+        color: #dddbdb;
     }
 
     p{
-        color: #f5f5f5;
+        color: #dddbdb;
     }
 }
 
@@ -1112,7 +1112,7 @@ header{
 }
 
 .reviews_container{
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     padding: 8% 6%;
     border-radius: 20px;
 }
@@ -1373,6 +1373,14 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
+
+    @media(max-width:920px){
+        margin-top: 6%;
+    }
+
+    @media(max-width:530px){
+        margin-top: 15%;
+    }
 }
 
 .small{
@@ -1384,7 +1392,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     width: 100%;
     height: 90%;
     border-radius: 20px;
@@ -1463,7 +1471,7 @@ footer{
 .big_dropdown_container{
     cursor: pointer;
     border-radius: 10px;
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     padding: 3% 0;
     transition: 5s ease-in-out;
     margin-top: 3%;
@@ -1547,7 +1555,7 @@ footer{
 }
 
 .other_docs_card_body{
-    background-color: #f5f5f5;
+    background-color: #dddbdb;
     border-radius: 10px;
     width: 100%;
 }
@@ -1574,4 +1582,202 @@ footer{
 .australia{
     font-weight: 500;
     margin-top: 2%;
+}
+
+/* STEPS */
+.steps_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2% 10%;
+    gap: 1.5%;
+
+    @media(max-width:1238px){
+        margin-top: 5%;
+    }
+
+    @media(max-width:750px){
+        margin-top: 10%;
+    }
+}
+
+.steps{
+    width: 100%;
+}
+
+.active_line{
+    width: 100%;
+    height: 4px;
+    background-color: #1F8498;
+    border-radius: 20px;
+}
+
+.step_done{
+    width: 100%;
+    height: 4px;
+    background-color: #1F8498;
+    border-radius: 20px;
+}
+
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: #dddbdb;
+    border-radius: 20px;
+}
+
+.step_number{
+    text-align: center;
+}
+
+.step_head{
+    font-weight: 500;
+    margin-top: 4%;
+
+    @media(max-width:390px){
+        font-size: 12px;
+    }
+}
+
+.step_detail{
+
+    @media(max-width:615px){
+        font-size: 15px;
+    }
+
+    @media(max-width:580px){
+        font-size: 13px;
+    }
+
+    @media(max-width:500px){
+        font-size: 11px;
+    }
+
+    @media(max-width:450px){
+        display: none;
+    }
+}
+
+/* Photo & Country Selection */
+.photo_country_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4% 10% 2% 10%;
+
+    @media(max-width:550px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.photo_container_{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media(max-width:550px){
+        margin-bottom: 2%;
+    }
+
+    img{
+        width: 100%;
+
+        @media(max-width:550px){
+            width: 200px;
+        }
+    }
+}
+
+.step_detail_head{
+    display: none;
+    font-weight: 500;
+
+    @media(max-width:450px){
+        display: block;
+    }
+}
+
+.country_selection{
+    background-color: #dddbdb;
+    border-radius: 20px;
+}
+
+.country_content_container{
+    margin: 5%;
+
+    @media(max-width:615px){
+        margin: 10%;   
+    }
+}
+
+.country_select_head{
+    font-weight: 500;
+    font-size: 20px;
+
+    @media(max-width:665px){
+        font-size: 18px;
+    }
+
+    @media(max-width:615px){
+        font-size: 15px;
+    }
+}
+
+.country_form{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #838383;
+
+    @media(max-width:615px){
+        font-size: 15px;
+    }
+}
+
+.countries_input{
+    padding: 2%;
+    border-radius: 10px;
+    outline: transparent;
+
+    @media(max-width:615px){
+        border-radius: 5px; 
+        font-size: 13px;  
+    }
+}
+
+.doc_type{
+    margin-top: 4%;
+}
+
+.input_doc_type{
+    padding: 2%;
+    border-radius: 10px;
+    outline: transparent;
+
+    @media(max-width:615px){
+        border-radius: 5px; 
+        font-size: 13px;  
+    }
+}
+
+.next_step_button{
+    cursor: pointer;
+    margin-top: 4%;
+    padding: 2%;
+    border-radius: 200px;
+    background-color: #182325;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+.next_step_button:hover{
+    background-color: #182325a9;
+}
+
+.step_photos_container, .step_photos_head{
+    margin-left: 10%;
+    margin-right: 10%;
 }
