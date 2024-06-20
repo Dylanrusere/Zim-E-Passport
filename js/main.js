@@ -8,8 +8,8 @@ hamMenu.addEventListener("click", () => {
 });
 
 
-// Counter To 
-let targetNumber1 = 499;
+// Counter 
+let targetNumber1 = 999;
 let targetNumber2 = 199;
 let counter1 = 0;
 let counter2 = 0;
@@ -36,6 +36,9 @@ function incrementCounter1() {
 
 incrementCounter1();
 incrementCounter2();
+
+// Slider
+
 
 // Search Bar
 const searchInput = document.getElementById("search_input");

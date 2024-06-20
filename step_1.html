@@ -97,20 +97,24 @@
                 <div class="country_content_container">
                     <div class="country_content">
                         <p class="country_select_head">Select Size and Country</p>
-                        <form class="country_form" action="">
-                            <label for="country_selection_input">Country*</label>
-                            <input type="dropdown" list="countries" placeholder="Zimbabwe" name="country_selection_input" class="countries_input">
+                        <form id="myForm" class="country_form">
+                            <label for="country_type">Country*</label>
+                            <input type="dropdown" list="countries" placeholder="Zimbabwe" name="country_type" id="country_type" class="countries_input" required>
                             <datalist id="countries">
                                 <option value="United States">United States</option>
                                 <option value="Canada">Canada</option>
                                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="Australia">Australia</option>
                                 <option value="Germany">Germany</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
                             </datalist>
-                            <label for="doc_type" class="doc_type">Document*</label>
-                            <input type="text" name="doc_type" placeholder="Document Type and Size" class="input_doc_type">
+                        
+                            <label for="document_type" class="doc_type">Document*</label>
+                            <input type="text" name="document_type" placeholder="Document Type and Size" class="input_doc_type" id="document_type" required>
                             <button type="submit" class="next_step_button">Next Step</button>
-                        </form>
+                        
+                          </form>
                     </div>
                 </div>
             </div>
@@ -178,14 +182,14 @@
             </div>
          </div>
 
-    </section>
+     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer_container">
             <div class="container_footer">
                 <div class="logo_container">
-                    <div class="footer_logo"><img src="./assets/images/logo.png" alt="Logo" width="60px"><h3>Zim E-Passport</h3></div>
+                    <div class="footer_logo"><img src="./assets/images/11.png" alt="Logo" width="60px"><h3>Passport +</h3></div>
                 </div>
                 <div class="navigation_links">
                     <a href="#">Home Page</a>
@@ -233,5 +237,22 @@
     </footer>
     
      <script src="./js/main.js"></script>
+     <script>
+        const form = document.getElementById('myForm');
+        const countryTypeInput = document.getElementById('country_type');
+        const docTypeInput = document.getElementById('document_type');
+
+        form.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+
+        
+        if (countryTypeInput.value === 'Zimbabwe' && docTypeInput.value === 'Passport 2x2 in') {
+            
+            window.location.href = 'step_2.html';
+        } else {
+            alert('Please enter a correct country and Document Type');
+        }
+        });
+     </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step Two</title>
+    <title>Step Three</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/images/logo.png" />
@@ -11,10 +11,10 @@
 </head>
 <body>
 
-    <!-- Hero Step Two -->
-     <section id="step_two">
-         <!-- Navigation Bar -->
-         <header>
+    <!-- Hero Details -->
+     <section id="hero_step_three">
+        <!-- Navigation Bar -->
+        <header>
             <a href="./index.html">
                 <div class="logo"><img src="./assets/images/11.png" alt="Logo" width="60px"><h3>Passport +</h3></div>
             </a>
@@ -56,7 +56,6 @@
                 </div>
             </nav>
         </header>
-
         <!-- Steps Bars -->
         <div class="steps_container">
             <div class="steps step_1">
@@ -67,14 +66,14 @@
                 </div>
             </div>
             <div class="steps step_1">
-                <div class=" active_line"></div>
+                <div class="step_done"></div>
                 <div class="step_number">
                     <p class="step_head">Step 2</p>
                     <p class="step_detail">Upload Photo</p>
                 </div>
             </div>
             <div class="steps step_1">
-                <div class="line"></div>
+                <div class="active_line"></div>
                 <div class="step_number">
                     <p class="step_head">Step 3</p>
                     <p class="step_detail">Adjust</p>
@@ -89,29 +88,52 @@
             </div>
         </div>
 
-        <!-- Uploading Photo -->
-        <div class="photo_country_container">
-            <div class="step_two_image">
-                <p class="step_detail_head">Upload Photo</p>
-                <img src="./assets/images/13.png" alt="">
+        <!-- Photo Editing -->
+         <div class="photo_edit_container">
+            <div class="adjust">
+                <p class="step_detail_head">Adjust</p>
             </div>
-            <div class="country_selection">
-                <div class="country_content_container">
-                    <div class="country_content">
-                        <div class="uploaded_photo_container">
-                            <img src="./assets/images/12.png" alt="">
+            <div class="photo_edit_grid_container">
+                <div class="doc_info">
+                    <div class="doc_info_container">
+                        <p class="country_select_head">Document Info</p>
+                        <div class="doc_info_details">
+                            <p class="info_faded">Document</p>
+                            <p class="doc_size size">Passport 2x2 in</p>
+                            <div class="info_country_type">
+                                <p class="info_faded">Country</p>
+                                <p class="info_size size">Zimbabwe</p>
+                            </div>
                         </div>
-                        <p class="country_select_head">Compatibility test passed</p>
-                        <p class="compatable"><i class="fa-solid fa-circle-check"></i> Corrected the aspect ratio</p>
-                        <p class="compatable"><i class="fa-solid fa-circle-check"></i> Adjusted the size of the face in the photo</p>
-                        <p class="compatable"><i class="fa-solid fa-circle-check"></i> Detected correct photo resolution</p>
-                        <p class="compatable"><i class="fa-solid fa-circle-check"></i> Recognized face</p>
-                        <p class="compatable"><i class="fa-solid fa-circle-check"></i> Corrected orientation</p>
-                        <a href="./step_3.html"><button type="submit" class="next_step_button step_2_submit">Next Step</button></a>
+                    </div>
+                </div>
+                <div class="photo_edit">
+                    <div class="photo_edit_image_container">
+                        <img src="./assets/images/12.png" alt="">
+                        <div class="buttons_step_3">
+                            <button class="step_3_btns">White Backgrorund</button>
+                            <button class="step_3_btns">Crop</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo_editing">
+                    <div class="doc_info range_range">
+                        <div class="doc_info_editing">
+                            <p class="country_select_head">Document Info</p>
+                            <div class="range_bars">
+                                <label for="exposure" class="range">Exposure</label>
+                                <input type="range" class="ranges" id="exposure" name="exposure" min="0" max="100" value="50" step="1">
+                                <label for="contrast" class="range">Contrast</label>
+                                <input type="range" class="ranges" id="contrast" name="contrast" min="0" max="100" value="50" step="2">
+                                <label for="smoothing" class="range">Smoothing Effect</label>
+                                <input type="range" class="ranges" id="smoothing" name="smoothing" min="0" max="100" value="50" step="3">
+                                <a href="./step_4.html"><button type="submit" class="next_step_button step_2_submit step_3_btn">Save</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+         </div>
 
      </section>
 
@@ -178,7 +200,7 @@
      </section>
 
      <!-- Footer -->
-    <footer>
+    <footer class="step_3_footer">
         <div class="footer_container">
             <div class="container_footer">
                 <div class="logo_container">
@@ -229,7 +251,8 @@
         </div>
     </footer>
 
-    
+
      <script src="./js/main.js"></script>
+    
 </body>
 </html>
