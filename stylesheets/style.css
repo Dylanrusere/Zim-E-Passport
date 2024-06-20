@@ -1461,6 +1461,7 @@ footer{
 }
 
 .big_dropdown_container{
+    cursor: pointer;
     border-radius: 10px;
     background-color: #f5f5f5;
     padding: 3% 0;
@@ -1472,19 +1473,38 @@ footer{
     margin: 0% 4%;
 }
 
+.qsn i.fa-caret-up {
+    transform: rotate(180deg);
+  }
+
+.qsn i {
+    transition: transform 0.5s ease-in-out;
+  }
+
 .qsn{
     font-weight: 500;
+    display: flex;
+    justify-content: space-between;
 }
 
-.dropdown_content{
+/* .dropdown_content{
     display: none;
     transition: 5s ease-in-out;
 }
 
 .big_dropdown_container:hover .dropdown_content{
     display: block;
+} */
+
+.more_details{
+    margin: 0;
+    padding: 10px;
+    display: none;
 }
 
+.more_details.details_activated{
+    display: block;
+}
 
 /* Other Documents */
 .big_other_docs_cards_container{

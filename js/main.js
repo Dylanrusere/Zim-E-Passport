@@ -38,19 +38,28 @@ incrementCounter1();
 incrementCounter2();
 
 // Search Bar
-const searchInput = document.getElementById('search_input');
-const searchButton = document.getElementById('search_icon');
+const searchInput = document.getElementById("search_input");
+const searchButton = document.getElementById("search_icon");
 
-searchButton.addEventListener('click', () => {
+searchButton.addEventListener("click", () => {
   const searchTerm = searchInput.value.trim();
   if (searchTerm !== '') {
     
-    console.log('Searching for:', searchTerm);
+    console.log("Searching for:", searchTerm);
   }
 });
 
-searchInput.addEventListener('keyup', (event) => {
-  if (event.key === 'Enter') {
+searchInput.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
     searchButton.click();
   }
+});
+
+// POPULAR DOCS
+// Dropdown
+const bigDropdownContainer = document.querySelector(".big_dropdown_container");
+const moreDetails = document.querySelector(".more_details");
+
+bigDropdownContainer.addEventListener("click", () => {
+    moreDetails.classList.toggle("details_activated");
 });
