@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #ffffff;
     transition: opacity 5s, visibility 0.75s;
 }
 
@@ -30,9 +30,9 @@
 
 .preloader::after{
     content: '';
-    width: 60px;
-    height: 60px;
-    border: 3px solid #FFCC00;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #182325;
     border-top-color: transparent;
     border-radius: 50%;
     animation: loading 1s ease infinite;
@@ -737,6 +737,15 @@ header{
         }
 }
 
+.big_card_container_passport_photos{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.big_card_container_passport_photos::-webkit-scrollbar{
+    display: none;
+}
 
 .card_container_photos{
     display: grid;
@@ -1976,6 +1985,10 @@ label{
         height: 100%;
     }
 }
+
+input[type="range"] {
+    accent-color: #182325;
+    }
 
 .range_range{
 
