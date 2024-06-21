@@ -150,10 +150,12 @@
                     Excepturi quod magni qui delectus.</p>
 
                     <div class="dropdowns">
-                        <div class="big_dropdown_container" id="big_dropdown_container">
-                            <div class="dropdown_container">
-                                <p class="qsn">U.S passport photos near me <i class="fa-solid fa-caret-down"></i></p>
-                                
+                        <div class="big_big">
+                            <div class="big_dropdown_container down_bar" id="big_dropdown_container">
+                                <div class="dropdown_container">
+                                    <p class="qsn">U.S passport photos near me <i class="fa-solid fa-caret-down"></i></p>
+                            
+                                </div>
                             </div>
                             <div class="dropdown_content">
                                 <p class="more_details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
@@ -282,12 +284,13 @@
 
     <script src="./js/main.js"></script>
     <script>
-        const showMore = document.getElementById('big_dropdown_container');
-        const cardMoreDetails = document.querySelector('.dropdown_content');
+        const downBar = document.querySelector('.down_bar');
+        const downMenu = document.querySelector('.dropdown_content');
 
-        showMore.addEventListener('click', () => {
-            cardMoreDetails.style.display = cardMoreDetails.style.display === 'none' ? 'block' : 'none';
-        });
+        downBar.onclick = function () {
+            downMenu.classList.toggle('open')
+
+        }
     </script>
 </body>
 </html>
