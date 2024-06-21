@@ -1413,6 +1413,10 @@ footer{
 
 .get{
     color: #ffffff;
+
+    i{
+        color: #ffffff;
+    }
 }
 
 .QR_code{
