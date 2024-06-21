@@ -1646,9 +1646,6 @@ footer{
     display: block;
 }
 
-.qsn i.fa-caret-up {
-    transform: rotate(180deg);
-  }
 
 .qsn i {
     transition: transform 0.5s ease-in-out;
@@ -1660,14 +1657,18 @@ footer{
     justify-content: space-between;
 }
 
-/* .dropdown_content{
+.dropdown_content{
     display: none;
     transition: 5s ease-in-out;
 }
 
 .big_dropdown_container:hover .dropdown_content{
     display: block;
-} */
+}
+
+.big_dropdown_container:hover .qsn i{
+    transform: rotate(180deg);
+}
 
 .more_details{
     margin: 0;
@@ -1682,6 +1683,36 @@ footer{
 /* Other Documents */
 .big_other_docs_cards_container{
     margin: 3% 2% 0 2%;
+}
+
+.big_big_other_docs_cards{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.big_big_other_docs_cards::-webkit-scrollbar{
+    display: none;
+}
+
+.other_docs_two{
+    margin-left: 5%;
+
+    @media(max-width:1210px){
+        margin-left: 7%;
+    }
+
+    @media(max-width:990px){
+        margin-left: 9%;
+    }
+
+    @media(max-width:760px){
+        margin-left: 11%;
+    }
+
+    @media(max-width:600px){
+        margin-left: 13%;
+    }
 }
 
 .other_docs_head{
@@ -1710,19 +1741,19 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5%;
 
-    @media(max-width:920px){
+    /* @media(max-width:920px){
         grid-template-columns: repeat(2, 1fr);
     }
 
     @media(max-width:520px){
         grid-template-columns: 1fr;
-    }
+    } */
 }
 
 .other_docs_card_body{
     background-color: #dddbdb;
     border-radius: 10px;
-    width: 100%;
+    width: 300px;
 }
 
 .card_body_container{
@@ -1942,10 +1973,6 @@ label{
     background-color: #182325a9;
 }
 
-.step_photos_container, .step_photos_head{
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
 /* STEP TWO */
 .uploaded_photo_container{
