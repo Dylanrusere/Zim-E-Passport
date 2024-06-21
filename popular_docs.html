@@ -149,49 +149,14 @@
                     Excepturi quod magni qui delectus.</p>
 
                     <div class="dropdowns">
-                        <div class="big_dropdown_container">
+                        <div class="big_dropdown_container" id="big_dropdown_container">
                             <div class="dropdown_container">
                                 <p class="qsn">U.S passport photos near me <i class="fa-solid fa-caret-down"></i></p>
-                                <div class="dropdown_content">
-                                    <p class="more_details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                        tenetur laborum assumenda dolore eos! Voluptatum recusandae magni quia.</p>
-                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="big_dropdown_container">
-                            <div class="dropdown_container">
-                                <p class="qsn">Requirements for U.S passport photos at the nearest phot store</p>
-                                <div class="dropdown_content">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                        tenetur laborum assumenda dolore eos! Voluptatum recusandae magni quia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="big_dropdown_container">
-                            <div class="dropdown_container">
-                                <p class="qsn">Instant passport photo near me</p>
-                                <div class="dropdown_content">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                        tenetur laborum assumenda dolore eos! Voluptatum recusandae magni quia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="big_dropdown_container">
-                            <div class="dropdown_container">
-                                <p class="qsn">Premium mail photo service</p>
-                                <div class="dropdown_content">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                        tenetur laborum assumenda dolore eos! Voluptatum recusandae magni quia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="big_dropdown_container">
-                            <div class="dropdown_container">
-                                <p class="qsn">Passport photo printing near me</p>
-                                <div class="dropdown_content">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                        tenetur laborum assumenda dolore eos! Voluptatum recusandae magni quia.</p>
-                                </div>
+                            <div class="dropdown_content">
+                                <p class="more_details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                                    tenetur laborum assumenda dolore eos! Voluptatum recusandae magni quia.</p>
                             </div>
                         </div>
                     </div>
@@ -306,13 +271,22 @@
                     <p class="faded small">&copy; Zim E-Passport</p>
                 </div>
             </div>
-            <div class="dylan_dev">
-
+            <div class="developer">
+                <p class="faded">Developed by </p>
+                <a class="developer_logo" href="http://dylan-rusere-portfolio.netlify.app"><img class="logo_image" src="./assets/images/Dylan.webp" alt="Dylan Rusere`s Logo"></a>
             </div>
         </div>
     </footer>
     
 
     <script src="./js/main.js"></script>
+    <script>
+        const showMore = document.getElementById('big_dropdown_container');
+        const cardMoreDetails = document.querySelector('.dropdown_content');
+
+        showMore.addEventListener('click', () => {
+            cardMoreDetails.style.display = cardMoreDetails.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>

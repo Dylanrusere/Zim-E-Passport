@@ -60,9 +60,9 @@ searchInput.addEventListener("keyup", (event) => {
 
 // POPULAR DOCS
 // Dropdown
-const bigDropdownContainer = document.querySelector(".big_dropdown_container");
-const moreDetails = document.querySelector(".more_details");
+// const showMore = document.getElementById('big_dropdown_container');
+// const cardMoreDetails = document.querySelector('.dropdown_content');
 
-bigDropdownContainer.addEventListener("click", () => {
-    moreDetails.classList.toggle("details_activated");
-});
+// showMore.addEventListener('click', () => {
+//   cardMoreDetails.style.display = cardMoreDetails.style.display === 'none' ? 'block' : 'none';
+// });
