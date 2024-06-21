@@ -1713,6 +1713,26 @@ footer{
     @media(max-width:600px){
         margin-left: 13%;
     }
+
+    @media(max-width:550px){
+        margin-left: 15%;
+    }
+
+    @media(max-width:480px){
+        margin-left: 17%;
+    }
+
+    @media(max-width:410px){
+        margin-left: 19%;
+    }
+
+    @media(max-width:350px){
+        margin-left: 21%;
+    }
+
+    @media(max-width:315px){
+        margin-left: 23%;
+    }
 }
 
 .other_docs_head{
