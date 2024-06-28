@@ -32,7 +32,7 @@ function incrementCounter1() {
     counterElement1.textContent = counter1;
 
     if (counter1 <= targetNumber1) {
-      requestAnimationFrame(incrementCounter1);
+      setTimeout(incrementCounter1, 50);
     }
   }
 
@@ -41,7 +41,7 @@ function incrementCounter1() {
     counterElement2.textContent = counter2;
 
     if (counter2 <= targetNumber2) {
-      requestAnimationFrame(incrementCounter2);
+      setTimeout(incrementCounter2, 100);
     }
   }
 
@@ -69,11 +69,27 @@ searchInput.addEventListener("keyup", (event) => {
   }
 });
 
-// POPULAR DOCS
-// Dropdown
-// const showMore = document.getElementById('big_dropdown_container');
-// const cardMoreDetails = document.querySelector('.dropdown_content');
 
-// showMore.addEventListener('click', () => {
-//   cardMoreDetails.style.display = cardMoreDetails.style.display === 'none' ? 'block' : 'none';
-// });
+$('.testimonials-container').owlCarousel({
+  loop:true,
+  autoplay:true,
+  autoplayTimeout:6000,
+  margin:10,
+  nav:true,
+  navText:["<i class='fa-solid fa-arrow-left'></i>",
+           "<i class='fa-solid fa-arrow-right'></i>"],
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      600:{
+          items:1,
+          nav:true
+      },
+      768:{
+          items:2
+      },
+  }
+})
+

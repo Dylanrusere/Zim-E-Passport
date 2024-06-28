@@ -56,6 +56,8 @@ header{
         display: flex;
         align-items: center;
     }
+
+    color: #3d4141;
 }
 
 .main_nav{
@@ -632,6 +634,45 @@ header{
     justify-content: space-between;
 }
 
+
+.testimonials-container{
+	position: relative;
+}
+.testimonials-container .testimonial-card{
+    display: flex;
+    justify-content: center;
+}
+
+.owl-nav{
+	position: absolute;
+	right: 20px;
+	bottom: -50px;
+}
+.owl-nav button{
+	border-radius: 50%;
+}
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i{
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 18px;
+	background-color: #182325;
+	color: #ffffff;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.owl-nav .owl-prev i:hover,
+.owl-nav .owl-next i:hover{
+	background-color: #eba85c;
+	color: #182325;
+    border-radius: 50%;
+}
+
+.owl-dots{
+	margin-top: 30px;
+}
+
+
 .next_prev{
     display: flex;
     gap: 50%;
@@ -737,7 +778,7 @@ header{
         }
 }
 
-.big_card_container_passport_photos{
+/* .big_card_container_passport_photos{
     display: flex;
     width: 100%;
     overflow-x: scroll;
@@ -745,7 +786,8 @@ header{
 
 .big_card_container_passport_photos::-webkit-scrollbar{
     display: none;
-}
+} */
+
 
 .big_none{
 
@@ -970,7 +1012,7 @@ header{
     }
 }
 
-.ref_details_container{
+.ref_card_container_details_container{
     margin-top: 10%;
 
     @media(max-width:750px){
